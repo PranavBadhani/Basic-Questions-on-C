@@ -1,6 +1,6 @@
 // 16: Write a program in C to delete a particular element in an array using function.
 
-// Code:
+// Code
 
 #include<stdio.h>
 void del(int[]);
@@ -37,7 +37,7 @@ void del(int b[])
 
 }
 
-// Output:
+// Output
 
 Enter the array elements:
 1
