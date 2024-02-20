@@ -1,4 +1,4 @@
-// 9: Write a program in C enter an element at a particular position in an array.
+// 09: Write a program in C enter an element at a particular position in an array.
 
 // Code
 
