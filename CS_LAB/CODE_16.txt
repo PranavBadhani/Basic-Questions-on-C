@@ -1,0 +1,56 @@
+// 16: Write a program in C delete a particular element in an array using function.
+
+// Code:
+
+#include<stdio.h>
+void del(int[]);
+int main()
+{
+  int a[10];
+  printf("Enter the array elements:\n");
+  for(int i=0;i<10;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+  del(a);
+  return 0;
+}
+void del(int b[])
+{
+  int c[9];
+  int n,y;
+  printf("Enter the index of the array element:\n");
+    scanf("%d",&y);
+  for(int i=0;i<y;i++)
+    {
+      c[i]=b[i];
+    }
+  for(int i=y+1;i<10;i++)
+    {
+      c[i-1]=b[i];
+    }
+  printf("New array is:\n");
+  for(int i=0;i<9;i++)
+    {
+      printf("%d ",c[i]);
+    }
+
+}
+
+// Output:
+
+Enter the array elements:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+Enter the index of the array element:
+6
+New array is:
+1 2 3 4 5 6 8 9 0
