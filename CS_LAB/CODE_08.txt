@@ -1,4 +1,4 @@
-// 8: Write a program in C tocheck whether inputed number is equal to the number of elements of array or not.
+// 08: Write a program in C tocheck whether inputed number is equal to the number of elements of array or not.
 
 // Code
 
