@@ -1,0 +1,43 @@
+// 17: Write a program in C to check and input elements in array and save its nth root in the array an array using function.
+
+// Code
+
+#include<stdio.h>
+#include<math.h>
+#include<stdio.h>
+int root(int,int);
+int main()
+{
+    int a[10],n;
+    printf("enter the value of n: ");
+    scanf("%d",&n);
+    printf("Enter the elements\n");
+    for(int i=0;i<10;i++){
+        scanf("%d",&a[i]);
+       int rt=root(a[i],n);
+        a[i]=rt;
+    }
+    for(int i=0;i<10;i++){
+        printf("%d ",a[i]);
+    }
+}
+int root(int t, int n){
+    t=pow(t,n);
+    return t;
+}
+
+// Output
+
+Enter the value of n: 4
+Enter the elements
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1 16 81 256 625 1296 2401 4096 6561 0

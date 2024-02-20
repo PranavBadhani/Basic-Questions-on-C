@@ -1,0 +1,51 @@
+// 04: Write a program in C to find the sum of the right diagonals of a matrix.
+
+// Code
+
+#include <stdio.h>
+
+int main() {
+    int a[3][3],sum=0;
+    printf("Enter array elements:\n");
+    for(int i=0;i<3;i++)
+      {
+        for(int j=0;j<3;j++)
+          {
+            scanf("%d",&a[i][j]);
+            if(i==j)
+              sum = sum + a[i][j];
+          }
+      }
+    printf("\nArray is:\n");
+    for(int i=0;i<3;i++)
+    {
+      for(int j=0;j<3;j++)
+        {
+          printf("%d ",a[i][j]);
+        }
+      printf("\n");
+    }
+  printf("\nSum is:\n%d",sum);
+    return 0;
+}
+
+\\ Output
+
+Enter array elements:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Array is:
+1 2 3 
+4 5 6 
+7 8 9 
+
+Sum is:
+15

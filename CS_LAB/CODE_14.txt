@@ -1,0 +1,42 @@
+// 14: Write a program in C to print right triangle star pattern upto n terms using the function.
+
+// Code
+
+#include <stdio.h>
+void pattern(int);
+int main() {
+    int n;
+    printf("Enter the rows: ");
+    scanf("%d",&n);
+    pattern(n);
+    return 0;
+}
+void pattern(int n)
+{
+  int i, j;
+  for (i = 1; i <= n; ++i) 
+  {
+    for (j = 1; j <= i; ++j) 
+    {
+        printf("* ");
+    }
+        printf("\n");
+  }
+}
+
+// Output
+
+Enter the rows: 5
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+
+Enter the rows: 6
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 

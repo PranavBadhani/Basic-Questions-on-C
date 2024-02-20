@@ -1,0 +1,63 @@
+// 8: Write a program in C tocheck whether inputed number is equal to the number of elements of array or not.
+
+// Code
+
+#include<stdio.h>
+int main()
+{
+    int a[10],k,count=0;
+    printf("Enter array elements\n");
+    for(int i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+
+    }
+    printf("Enter the number to be checked\n");
+    scanf("%d",&k);
+    for(int i=0;i<10;i++)
+    {
+            count++;
+    }
+        if( count==k)
+        {
+          printf("Equal");
+        }
+        else
+        {
+          printf("Not equal");
+        }
+    return 0;
+}
+
+// Output
+
+Enter array elements
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+Enter the number to be checked
+10
+Equal
+
+Enter array elements
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+Enter the number to be checked
+8
+Not equal
+

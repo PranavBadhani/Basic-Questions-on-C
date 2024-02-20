@@ -1,0 +1,30 @@
+// 12: Write a program in C to reverse a number using the function.
+
+// Code
+
+#include <stdio.h>
+int rev(int);
+int main() {
+    int n,rev;
+    printf("Enter the number to be reversed: ");
+    scanf("%d",&n);
+    r=rev(n);
+    printf("The reversed number is: %d",r);
+    return 0;
+}
+int rev(int n)
+{
+  int d,t=0;
+  while(n!=0)
+    {
+      d=n%10;
+      t=d+(t*10);
+      n=n/10;
+    }
+  return t;
+}
+
+// Output
+
+Enter the number to be reversed: 321
+The reversed number is: 123

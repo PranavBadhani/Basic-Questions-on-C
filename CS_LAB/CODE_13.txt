@@ -1,0 +1,41 @@
+// 13: Write a program in C to check if a number is perfect number or not using the function.
+
+// Code
+
+#include <stdio.h>
+void per(int);
+int main() {
+    int n;
+    printf("Enter the number to be checked: ");
+    scanf("%d",&n);
+    per(n);
+    return 0;
+}
+void per(int n)
+{
+  int m=n,sum=0;
+  for(int i=1;i<=n/2;i++)
+    {
+      sum = sum + i;
+    }
+  if(sum==m)
+  {
+    printf("Perfect number");
+  }
+  else
+  {
+    printf("Not a perfect number");
+  }
+  
+}
+
+// Output
+
+Enter the number to be checked: 6
+Perfect number
+
+Enter the number to be checked: 7
+Not a perfect number
+
+
+

@@ -1,0 +1,30 @@
+// 11: Write a program in C to find the sum of the series 1!/1+2!/2+3!/3+4!/4+5!/5 using the function.
+
+// Code
+
+#include <stdio.h>
+int fun(int);
+int main() {
+    int sum=0;
+    for(int i=1;i<=5;i++)
+      {
+        sum=sum+(fun(i))/i;
+      }
+    printf("Sum of series is:\n");
+    printf("%d",sum);
+    return 0;
+}
+int fun(int n)
+{
+  int fact=1;
+  for(int i=1;i<=n;i++)
+    {
+      fact=fact*i;
+    }
+  return fact;
+}
+
+// Output
+
+Sum of series is:
+34

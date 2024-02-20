@@ -1,0 +1,51 @@
+// 10: Write a program in C delete a particular element in an array.
+
+// Code
+
+// 10: Write a program in C delete a particular element in an array.
+
+#include<stdio.h>
+int main()
+{
+  int a[10],p;
+  printf("Enter array elements\n");
+  for(int i=0;i<10;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    printf("Enter the position ");
+    scanf("%d",&p);
+
+    if(p>=11)
+    printf("Deletion is not possible");
+
+    else
+    {
+        for(int i=p-1;i<9;i++)
+        a[i]=a[i+1];
+
+        printf("Resultant array is:\n");
+
+        for(int i=0;i<9;i++)
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
+
+// Output
+
+Enter array elements
+1
+2
+3
+4
+5
+5
+6
+7
+8
+9
+Enter the position 5
+Resultant array is:
+1 2 3 4 5 6 7 8 9
+

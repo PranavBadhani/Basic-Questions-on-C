@@ -1,0 +1,43 @@
+// 15: Write a program in C to check if a number is strong number or not using the function.
+
+// Code
+
+#include <stdio.h>
+int stro(int);
+int main()
+{
+  int n, sum = 0;
+  printf("Enter the number: ");
+  scanf("%d", &n);
+  int i = n;
+  while (i != 0)
+  {
+    sum = sum + stro(i % 10);
+    i = i / 10;
+  }
+  if (sum == n)
+  {
+    printf("Strong number");
+  }
+  else
+  {
+    printf("Not a strong number");
+  }
+}
+int stro(int n)
+{
+  int i, fact = 1;
+  for (i = 1; i <= n; i++)
+  {
+    fact = fact * i;
+  }
+  return fact;
+}
+
+// Output
+
+Enter the number: 145
+Strong number
+
+Enter the number: 541
+Not a strong number

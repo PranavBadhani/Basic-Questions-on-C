@@ -1,0 +1,66 @@
+// 01: Write a program in C to separate odd and even integers into separate arrays.
+
+// Code:
+
+#include <stdio.h>
+
+int main() {
+    int a[10],b[10],c[10],j=0,k=0;
+    printf("Input array elements\n");
+    for(int i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<10;i++)
+      {
+        if(a[i]%2==0)
+        {
+          b[j]=a[i];
+          j++;
+        }
+        else
+        {
+          c[k]=a[i];
+          k++;
+        }
+      }
+    printf("Primary array is:\n");
+    for(int i=0;i<10;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    printf("\nEven array is:\n");
+    for(int i=0;i<j;i++)
+    {
+        printf("%d ",b[i]);
+    }
+    printf("\nOdd array is:\n");
+    for(int i=0;i<k;i++)
+    {
+        printf("%d ",c[i]);
+    }
+    return 0;
+}
+
+// Output:
+
+Input array elements:
+1
+2
+32
+44
+33
+31
+9
+90
+97
+77
+
+Primary array is:
+1 2 32 44 33 31 9 90 97 77 
+
+Even array is:
+2 32 44 90 
+
+Odd array is:
+1 33 31 9 97 77

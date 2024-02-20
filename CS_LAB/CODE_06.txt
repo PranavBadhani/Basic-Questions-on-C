@@ -1,0 +1,90 @@
+// 06: Write a program in C to check whether a given matrix is an identity matrix.
+
+// Code
+
+#include <stdio.h>
+
+int main() {
+    int a[3][3],count=0;
+    printf("Enter array elements:\n");
+    for(int i=0;i<3;i++)
+      {
+        for(int j=0;j<3;j++)
+          {
+            scanf("%d",&a[i][j]);
+          }
+      }
+    
+    printf("\nMatrix is:\n");
+    for(int i=0;i<3;i++)
+    {
+      for(int j=0;j<3;j++)
+        {
+          printf("%d ",a[i][j]);
+        }
+      printf("\n");
+      
+    }
+  for(int i=0;i<3;i++)
+      {
+        for(int j=0;j<3;j++)
+          {
+            if(i==j)
+            {
+              continue;
+            }
+            else
+            {
+              if(a[i][j]!=0)
+                count ++;
+            }
+          }
+      }
+  if(count>=1)
+  {
+    printf("\nNot An Identity Matrix.");
+  }
+  else
+  {
+    printf("\nIdentity Matrix.");
+  }
+    return 0;
+}
+
+// Output
+
+Enter array elements:
+1
+0
+0
+0
+1
+0
+0
+0
+1
+
+Matrix is:
+1 0 0 
+0 1 0 
+0 0 1 
+
+Identity Matrix.
+
+Enter array elements:
+1
+0
+1
+0
+0
+1
+1
+0
+0
+
+Matrix is:
+1 0 1 
+0 0 1 
+1 0 0 
+
+Not An Identity Matrix.
