@@ -1,8 +1,7 @@
 // 18: Write a program in C to print product of all elements using function.
 
-// Code
+// Code:
 
-#include<stdio.h>
 #include<stdio.h>
 int product(int );
 int main()
@@ -25,7 +24,7 @@ int product(int n){
     return mul;
 }
 
-// Output
+// Output:
 
 Enter the elements
 1
