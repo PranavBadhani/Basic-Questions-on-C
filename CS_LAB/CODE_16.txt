@@ -1,4 +1,4 @@
-// 16: Write a program in C delete a particular element in an array using function.
+// 16: Write a program in C to delete a particular element in an array using function.
 
 // Code:
 
