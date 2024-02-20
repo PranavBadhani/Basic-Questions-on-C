@@ -1,4 +1,4 @@
-// 04: Write a program in C to find the sum of the right diagonals of a matrix.
+// 03: Write a program in C to find the sum of the right diagonals of a matrix.
 
 // Code
 
