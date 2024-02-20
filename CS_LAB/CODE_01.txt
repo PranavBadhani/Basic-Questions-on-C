@@ -1,6 +1,6 @@
 // 01: Write a program in C to separate odd and even integers into separate arrays.
 
-// Code:
+// Code
 
 #include <stdio.h>
 
@@ -42,7 +42,7 @@ int main() {
     return 0;
 }
 
-// Output:
+// Output
 
 Input array elements:
 1
